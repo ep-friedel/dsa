@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DSA</title>
+  <link rel="stylesheet" href=".\dsa.css">
+  <script src=".\chars.js"></script>
+  <script src=".\tables.js"></script>
+  <script src=".\dsa.js"> </script>
+</head>
+<body class="lightgreen">
+<ul id="framelist">
+  <li class="selected" data-target="npcframe">NPC's</li>
+  <li  data-target="playerframe">Players</li>
+  <li  data-target="storyframe">Story</li>
+  <li  data-target="tableframe">Tabellen</li>
+  <li  data-target="linkframe">Links</li>
+</ul>
+<div id="tableframe" class="frame tableframe">
+  <div id="tablesLeft"></div>
+  <div id="tablesRight"></div>
+</div>
+<div id="playerframe" class="frame">
+  <ul id="pcactions">
+  <li id="sinnAll">Sinnesschärfe</li>
+  <li id="dangerAll">Gefahreninstinkt</li>
+  <li id="luckAll">Glück</li>
+  </ul>
+  <ul id="pclist" class="charslist">
+
+  </ul>
+</div>
+<div id="npcframe" class="frame active">
+  <ul id="charslist" class="charslist"></ul>
+  <div id="frame" class="">
+  </div>
+</div>
+<div class="frame" id="storyframe">
+  <textarea name="story" id="story" cols="30" rows="39"></textarea>
+  <textarea name="story" id="story2" cols="30" rows="19"></textarea>
+  <textarea name="story" id="story3" cols="30" rows="19"></textarea>
+</div>
+<div class="frame" id="linkframe">
+  <ol>
+    <li><a href=".\map\aventurien.jpg">Weltkarte</a></li>
+    <li><a href="http://diarium.eu/dsa-nsc/index">NSC-Generator</a></li>
+  </ol>
+</div>
+</body>
+</html>

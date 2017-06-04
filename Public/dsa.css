@@ -1,0 +1,209 @@
+body{
+  margin: 0;
+}
+
+label,
+input,
+button,
+ul,
+textarea{
+  margin: 0 5px 0px 5px;
+  box-sizing: border-box;
+}
+
+div{
+  margin: 5px;
+}
+
+label {
+  font-size: x-small;
+}
+
+label,
+input,
+textarea {
+  width: 95%;
+}
+button {
+  min-width: 45%;
+  margin: 5px 2.5%;
+  float: left;
+}
+li:hover {
+    background: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+li a {
+  display: block;
+  width: 100%;
+}
+
+.tableframe.active.frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tableframe div{
+  width: 49%;
+  margin: 0;
+}
+
+.tableframe table {
+    font-weight: 300;
+    border-collapse: collapse;
+    text-align: center;
+    width: 98%;
+    margin: 0 1% 3%;
+}
+.tableframe thead th {
+    font-weight: 500;
+}
+
+.tableframe td, th {
+    padding: 4px 8px;
+}
+
+#newchar {
+  display: none;
+}
+#frame {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.char {
+  position: relative;
+  width: 250px;
+  height: auto;
+  padding: 10px;
+  margin: 5px;
+}
+.char:hover {
+    cursor: inherit;
+    border-radius: 0px;
+}
+.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+.dmgbar, .charslist, #framelist, #pcactions{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+  margin-left: 0px;
+}
+.dmgbar{
+  background: red;
+}
+.dmgbar li {
+  text-align: center;
+  cursor: pointer;
+  flex-grow: 1;
+}
+#charslist,
+#pcactions{
+  flex-wrap: wrap;
+}
+#pcactions li,
+#charslist li {
+  text-align: center;
+  cursor: pointer;
+  flex-grow: 1;
+  padding: 5px 10px;
+}
+.fullWidthEl,
+.halfWidthEl {
+  margin: 0px;
+
+}
+.fullWidthEl{
+  width: 100%;
+  clear:both;
+}
+.halfWidthEl {
+  width: 50%;
+  float:left;
+}
+#framelist li.selected {
+  background: rgba(0, 0, 0, 0.075);
+}
+#framelist li {
+  flex-grow: 1;
+  margin: 0 5px;
+  padding: 3px 10px;
+  text-align: center;
+}
+.frame {
+  display: none;
+}
+.frame.active {
+  display:block;
+}
+#pclist {
+  flex-wrap: wrap;
+}
+#pclist button {
+  margin-top: 19px;
+  margin-bottom: 0px;
+}
+#story,
+#story2,
+#story3{
+  width: 48%;
+  float:left;
+}
+#story3 {
+  margin-top: 8px;
+}
+
+
+.lightgreen .tableframe thead tr,
+.lightgreen .tableframe table {
+    border: solid 1px #7fb96b;
+}
+.lightgreen #framelist,
+.lightgreen .tableframe thead tr {
+  background: #cbfbb2;
+}
+
+.lightgreen #charslist,
+.lightgreen #pcactions,
+.lightgreen .tableframe tr:nth-child(2n),
+.lightgreen .char:hover,
+.lightgreen .char {
+  background: #dcffd5;
+}
+.lightgreen #framelist {
+  border-bottom: #7fb96b solid 1px;
+}
+
+
+
+.lightblue .tableframe thead tr,
+.lightblue .tableframe table {
+  border: solid 1px #82a3ad;
+}
+
+.lightblue #framelist,
+.lightblue .tableframe thead tr {
+  background: lightblue;
+}
+
+.lightblue #charslist,
+.lightblue #pcactions,
+.lightblue .tableframe tr:nth-child(2n),
+.lightblue .char:hover,
+.lightblue .char {
+  background: #e5f2ff;
+}
+
+.lightblue #framelist {
+  border-bottom: #82a3ad solid 1px;
+}
